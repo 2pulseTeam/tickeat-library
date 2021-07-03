@@ -1,0 +1,13 @@
+{
+  "name": "tickeat-library",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:library": "rimraf dist && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "rimraf": "^3.0.2"
+  }
+}
