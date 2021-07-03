@@ -6,7 +6,7 @@ import { ITag } from "./tag.interface";
 export interface IOrderPromotion extends IPromotion {
   computedDiscount?: number;
 
-  discountedProductVariation?: Pick<IOrderProductVariation, '_id' | 'taxId' | 'deliveryTaxId' | 'takeAwayTaxId'>;
+  discountedProductVariation?: Pick<IOrderProductVariation, '_id' | 'taxId' | 'deliveryTaxId' | 'takeAwayTaxId' | 'accountCodeId'>;
 
   // appliedOnItems?: {type: ItemType, item: {productVariation: Pick<IOrderProductVariation, '_id' | 'taxId' | 'deliveryTaxId' | 'takeAwayTaxId'>}}[];
 }

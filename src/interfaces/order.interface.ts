@@ -1,3 +1,4 @@
+import { IAccountCode } from "./account-code.interface";
 import { IAddress } from "./address.interface";
 import { ICatalog } from "./catalog.interface";
 import { ICustomer } from "./customer.interface";
@@ -28,6 +29,13 @@ export enum DiscountType {
 
 export interface IOrderTaxes {
   rate: number;
+  tvaAmount: number;
+  htAmount: number;
+  ttcAmount: number;
+}
+
+export interface IOrderAccountCodes {
+  accountCode: IAccountCode;
   tvaAmount: number;
   htAmount: number;
   ttcAmount: number;
